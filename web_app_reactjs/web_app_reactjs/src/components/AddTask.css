@@ -2,6 +2,8 @@
     margin: 15px 0;
     width: 100px;
     display: flex;
+    justify-content: space-between;
+    
 }
 
 .add-task-input {
@@ -18,6 +20,7 @@
 }
 
 .add-task-button-container {
-    margin-left: 8px;
+    margin-left: 9px;
     flex: 1;
+    
 }

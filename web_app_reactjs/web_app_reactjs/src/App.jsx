@@ -8,6 +8,7 @@ import './App.css';
 import AddTask from "./components/AddTask";
 import Header from "./components/Header";
 import TaskDetails from "./components/TaskDetails";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [tasks, setTasks] = useState([
@@ -25,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const {data} = await axios.get("https://jsonplaceholder.cypress.io/todos?_limit=10");
+      const {data} = await axios.get("https://jsonplaceholder.cypress.io/todos?_limit=7");
       setTasks(data)
     };
 
@@ -74,8 +75,12 @@ const App = () => {
             </>
           )}
         />
-        <Route path="/:taskTitle" exact component={TaskDetails}/>         
+        <Route path="/:taskTitle" exact component={TaskDetails}/>
+        <div className="footer-container">
+        <Footer/>
+      </div>         
       </div>
+     
     </Router>
   )
 }

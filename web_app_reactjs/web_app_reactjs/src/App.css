@@ -1,10 +1,9 @@
 .container {
     max-width: 500px;
-    margin: 30px auto;
+    margin: 20px auto;
     overflow: auto;
-    min-height: 300px;
+    min-height: 100px;
     border: 2px solid blue;
     padding: 30px;
     border-radius: 10px;
-
 }
